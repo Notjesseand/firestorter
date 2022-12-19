@@ -27,7 +27,7 @@
     "web"
   ],
   "scripts": {
-    "build": "yarn build:dist && yarn build:web",
+    "build": "node api.js && yarn build:dist && yarn build:web",
     "build:dist": "tsdx build",
     "build:web": "cp src/IContext.ts web && tsc web/index.ts --declaration",
     "lint": "tsdx lint src test",
